@@ -1,0 +1,80 @@
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.merch {
+  color: blue;
+}
+
+p {
+  font-size: 20px;
+  text-align: center
+}
+
+div{
+  text-align: center
+}
+
+img {
+  margin: auto;
+  display: block;
+}
+
+
+.container {
+  padding: 0 40px;
+  margin-left: 100px;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 25px;
+  margin: 25px 0;
+  text-align: center;
+}
+
+  /* Свойства фотографии*/
+.kotik {
+ margin-top: 2%;
+  /*border-radius: 100px; */
+  /* Радиус скругления */
+  /*border: 3px solid transparent; */
+  /* Параметры рамки */
+  box-shadow: 0 4px 5px 0px  #00ff7f;
+  object-fit: cover;
+}
+
+  /* Эффект наведения на картинку */
+.kotik:hover {
+  border: 3px solid #00d200;
+}
+
+  /* Свойства ссылок */
+a {
+  display: block;
+  text-decoration:none;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+  /* Что делать при наведении на ссылку */
+a:hover {
+  color:darkred;
+}
+
+  /* Этим свойством добавляем подчеркивание через создание псевдокласса */
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(1.5em);
+  border-bottom: 1px solid #dadada;
+  width: 300px;
+}
+
